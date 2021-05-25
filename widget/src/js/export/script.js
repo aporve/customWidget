@@ -1,6 +1,6 @@
 var makeIframe = document.createElement("iframe");
 // makeIframe.setAttribute("src", "./widget/public/index.html");
-makeIframe.setAttribute("src", "./widget/public/index.html");
+makeIframe.setAttribute("src", "https://aporve.github.io/customWidget/widget/public/index.html");
 makeIframe.setAttribute("scrolling", "no");
 makeIframe.style.border = "none";
 makeIframe.style.width = "100%";
