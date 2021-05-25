@@ -11,7 +11,7 @@ makeIframe.style.borderRadius = "20px";
 
 var makeIframe2 = document.createElement("iframe");
 // makeIframe2.setAttribute("src", "./widget/public/widget-fame.html"); //local
-makeIframe2.setAttribute("src", "./widget/test.html");
+makeIframe2.setAttribute("src", "/widget/test.html");
 makeIframe2.setAttribute("id", "ymbtn");
 makeIframe2.setAttribute("scrolling", "no");
 makeIframe2.style.border = "none";
