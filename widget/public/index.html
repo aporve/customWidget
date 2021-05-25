@@ -11,6 +11,7 @@
         .vanguard-main-frame {
             height: 100%;
             width: 100%;
+            border-radius: 20%;
         }
 /* 
         .buttons {
@@ -160,24 +161,24 @@
     <script src="https://kit.fontawesome.com/8bbf807456.js" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
     <script>
-        // let frame = document.getElementById('vanguard-main-frame');
-        // let icon = document.getElementById('vanguard-icon-wrapper');
+        let frame = document.getElementById('vanguard-main-frame');
+        let icon = document.getElementById('vanguard-icon-wrapper');
 
 
-        // function openScreen() {
-        //     if (frame.style.display === "none") {
-        //         frame.style.display = "block";
-        //         icon.style.display = 'none';
-        //     } else {
-        //         frame.style.display = "none";
-        //     }
-        // }
+        function openScreen() {
+            if (frame.style.display === "none") {
+                frame.style.display = "block";
+                icon.style.display = 'none';
+            } else {
+                frame.style.display = "none";
+            }
+        }
 
-        // document.getElementById('close').addEventListener('click', () => {
-        //     console.error('Nice');
-        //     frame.style.display = "none";
-        //     icon.style.display = 'block';
-        // });
+        document.getElementById('close').addEventListener('click', () => {
+            console.error('Nice');
+            frame.style.display = "none";
+            icon.style.display = 'block';
+        });
     </script>
 </body>
 </html>
