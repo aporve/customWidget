@@ -1,6 +1,7 @@
 var makeIframe = document.createElement("iframe");
 // makeIframe.setAttribute("src", "./widget/public/index.html"); //local
-makeIframe.setAttribute("src", "https://aporve.github.io/customWidget/widget/public/index.html");
+// makeIframe.setAttribute("src", "https://aporve.github.io/customWidget/widget/public/index.html");
+makeIframe.setAttribute("src", "/customWidget/widget/public/index.html")
 makeIframe.setAttribute("scrolling", "no");
 makeIframe.style.border = "none";
 makeIframe.style.width = "100%";
@@ -11,7 +12,8 @@ makeIframe.style.borderRadius = "20px";
 
 var makeIframe2 = document.createElement("iframe");
 // makeIframe2.setAttribute("src", "./widget/public/widget-fame.html"); //local
-makeIframe2.setAttribute("src", "https://aporve.github.io/customWidget/widget/public/widget-fame.html");
+// makeIframe2.setAttribute("src", "https://aporve.github.io/customWidget/widget/public/widget-fame.html");
+makeIframe2.setAttribute("src", "/customWidget/widget/public/widget-fame.html");
 makeIframe2.setAttribute("id", "ymbtn");
 makeIframe2.setAttribute("scrolling", "no");
 makeIframe2.style.border = "none";
