@@ -153,23 +153,24 @@
     <script src="https://kit.fontawesome.com/8bbf807456.js" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
     <script>
-        let frame = document.getElementById('vanguard-main-frame');
-        let icon = document.getElementById('vanguard-icon-wrapper');
+        // let frame = document.getElementById('vanguard-main-frame');
+        // let icon = document.getElementById('vanguard-icon-wrapper');
 
+        let frame = document.getElementById('v-frame');
 
-        function openScreen() {
-            if (frame.style.display === "none") {
-                frame.style.display = "block";
-                icon.style.display = 'none';
-            } else {
-                frame.style.display = "none";
-            }
-        }
+        // function openScreen() {
+        //     if (frame.style.display === "none") {
+        //         frame.style.display = "block";
+        //         icon.style.display = 'none';
+        //     } else {
+        //         frame.style.display = "none";
+        //     }
+        // }
 
         document.getElementById('close').addEventListener('click', () => {
             console.error('Nice');
             frame.style.display = "none";
-            icon.style.display = 'block';
+            // icon.style.display = 'block';
         });
 
         function sendEvent1(btnID) {
