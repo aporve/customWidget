@@ -139,7 +139,7 @@
                     </ul>
                </div>
                <div class="m-0 p-0" style="height: 90%;">
-                <iframe id="ymIframe" src="https://app.yellowmessenger.com/pwa/mobile/x1621406512786?fullScreen=true" frameborder="0" width="100%" height="100%" style="border-radius: 0px 0PX 20px 0px;">
+                <iframe id="ymIframe" src="https://app.yellowmessenger.com/pwa/mobile/x1621406512786?fullScreen=true&ym.hideTitleBar=true"  frameborder="0" width="100%" height="100%" style="border-radius: 0px 0PX 20px 0px;">
                 </iframe>
                </div>
             </div>
@@ -156,7 +156,7 @@
         // let frame = document.getElementById('vanguard-main-frame');
         // let icon = document.getElementById('vanguard-icon-wrapper');
 
-        let frame = document.getElementById('v-frame');
+        let frame = window.getElementById('v-frame');
 
         // function openScreen() {
         //     if (frame.style.display === "none") {
@@ -168,9 +168,10 @@
         // }
 
         document.getElementById('close').addEventListener('click', () => {
-            console.error('Nice');
-            frame.style.display = "none";
+            // console.error('Nice');
+            // frame.style.display = "none";
             // icon.style.display = 'block';
+            window.YellowMessengerPlugin.closeBot()
         });
 
         function sendEvent1(btnID) {
