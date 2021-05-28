@@ -18,16 +18,45 @@
 	</div>
 
 
-    <!-- <div class="wrapper m-0 p-0" id="main-icon">
-        <div class="vanguard-icon-wrap here-note m-0 p-0" id="vanguard-icon-wrapper">
-            <div class="vanguard-icon m-0 p-0">
-                <img class="vanIcon m-0 p-0" style="width: 50px; margin: auto auto;" src="https://cdn.yellowmessenger.com/LS9XYE9urVcj1605084428877.png" alt="icon" onclick="openScreen()">
-            </div>
-        </div>
-    </div> -->
+   
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="/widget/src/js/component/frame.js"></script>   
+    <!-- <script src="../src/js/component/frame.js"></script>    -->
     <!-- <script src="https://aporve.github.io/customWidget/widget/src/js/component/frame.js"></script> -->
     <!-- <script src="/customWidget/widget/src/js/component/frame.js"></script> -->
+    <script>
+        function openWidget() {
+            // jQuery("#v-chat-icon").addClass("open");
+            // parent.document.getElementById("v-chat-box").classList.add("max-widget");
+            parent.document.getElementById("v-frame").classList.add("v-frame-max");
+            parent.document.getElementById("v_widget_container").classList.add("v-widget-max");
+        }
+
+        function closeWidget() {
+            // jQuery("#v-chat-icon").removeClass("open");
+            // parent.document.getElementById("v-chat-box").classList.remove("max-widget");
+            parent.document.getElementById("v-frame").classList.remove("v-frame-max");
+            parent.document.getElementById("v_widget_container").classList.remove("v-widget-max");
+        }
+
+
+
+        $(document).ready(function() {
+            var show_widget = false;
+            $('[data-toggle="dc-frame-show"], [data-toggle="dc-frame-hide"]').on("click", function() {
+                show_widget = !show_widget;
+                if(show_widget)
+                {
+                    openWidget();
+                }
+                else{
+                    closeWidget();
+                }				
+            });
+
+        });
+
+
+
+    </script>
 </body>
 </html>
